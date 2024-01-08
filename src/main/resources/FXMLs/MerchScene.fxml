@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS/cupertino-light.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.merchlogistics.Controllers.MerchSceneController">
+   <children>
+      <MenuButton fx:id="optionsMenuButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Hàng hóa">
+         <items>
+            <MenuItem fx:id="merchMenuItem" mnemonicParsing="false" onAction="#switchToMerchScene" text="Hàng hóa" />
+            <MenuItem fx:id="historyMenuItem" mnemonicParsing="false" onAction="#switchToHistoryScene" text="Lịch sử kho" />
+         </items>
+      </MenuButton>
+   </children>
+</VBox>
