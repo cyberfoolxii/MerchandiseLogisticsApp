@@ -10,7 +10,7 @@ import java.io.IOException;
 public class LogisticsApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        SceneGettable sceneGettable = new Getter();
+        SceneGettable sceneGettable = Getter.getInstance();
         ControllerGettable controllerGettable = (ControllerGettable) sceneGettable;
         SceneSwitchable sceneSwitchable = new SceneSwitcher(stage, sceneGettable);
 
@@ -20,11 +20,7 @@ public class LogisticsApplication extends Application {
 
         sceneSwitchable.switchScene(SceneEnum.MAIN_SCENE);
 
-/*        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXMLs/MainSceneFXML.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();*/
+        stage.setWidth(800); stage.setHeight(800);
     }
 
     public static void main(String[] args) {

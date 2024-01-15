@@ -5,42 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6ef382f-e3d7-48f3-925c-f06e1da8f541" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/HistorySceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MainSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchSceneController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Calculable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Merchandise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseComposite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Enums/SceneEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/ExceptionLoggers/IOExceptionLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/ExceptionLoggers/Loggable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/LogisticsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Tester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/ControllerGettable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Getter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/SceneGettable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/SceneSwitchable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/SceneSwitcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/cupertino-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/HistoryScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/Items/MerchItem.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/MainSceneFXML.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/MerchScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/NewMerchItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Available.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/NewMerchItemScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/pin-maxell-2a-a1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MainSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Merchandise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Merchandise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseComposite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/LogisticsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/LogisticsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Getter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Getter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXMLs/Items/MerchItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/Items/MerchItem.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXMLs/MerchScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/MerchScene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +60,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java IDE Workspace/Cyberfools_BigHomework&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -108,6 +92,30 @@
       <option name="presentableId" value="Default" />
       <updated>1704630716436</updated>
     </task>
+    <task id="LOCAL-00001" summary="Building fundamental classes &amp; GUI">
+      <option name="closed" value="true" />
+      <created>1704706632928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704706632929</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Building fundamental classes &amp; GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building fundamental classes &amp; GUI" />
   </component>
 </project>

@@ -17,14 +17,22 @@ import javafx.scene.Scene;
  * provide it to client whenever they need
  */
 public class Getter implements SceneGettable, ControllerGettable {
+    private static Getter getter;
     private final HashMap<SceneEnum, Scene> enumSceneHashMap = new HashMap<>();
     private final HashMap<SceneEnum, Object> enumControllerHashMap = new HashMap<>();
     private final Loggable loggable = new IOExceptionLogger();
 
+    public static Getter getInstance() {
+        if (getter == null) {
+            getter = new Getter();
+        }
+        return getter;
+    }
+
     /* this constructor loads every possible scene from path
      *  for later use
      */
-    public Getter() {
+    private Getter() {
         load(SceneEnum.MAIN_SCENE, "/FXMLs/MainSceneFXML.fxml");
         load(SceneEnum.MERCH_SCENE, "/FXMLs/MerchScene.fxml");
         load(SceneEnum.HISTORY_SCENE, "/FXMLs/HistoryScene.fxml");

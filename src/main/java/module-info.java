@@ -9,5 +9,6 @@ module com.example.merchlogistics {
     exports com.example.merchlogistics.Enums;
     opens com.example.merchlogistics.Controllers to javafx.fxml;
     exports com.example.merchlogistics.Workers;
+    exports com.example.merchlogistics.Entities;
     opens com.example.merchlogistics.Workers to javafx.fxml;
 }
