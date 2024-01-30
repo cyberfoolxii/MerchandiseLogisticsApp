@@ -1,16 +1,19 @@
 package com.example.merchlogistics.Controllers;
 
-import com.example.merchlogistics.Entities.Merchandise;
+import com.example.merchlogistics.Entities.MerchandiseComposite;
 import com.example.merchlogistics.Enums.SceneEnum;
 import com.example.merchlogistics.Workers.Formatter;
-import com.example.merchlogistics.Workers.Getter;
+import com.example.merchlogistics.Workers.SceneManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,6 +38,18 @@ public class MerchItemController implements Initializable {
     @FXML
     private CheckBox checkBox;
 
+    private MerchandiseComposite merchandiseComposite;
+
+    // content when clicked
+
+    public void buttonClick(ActionEvent event) {
+        showContent();
+    }
+
+    private void showContent() {
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
@@ -54,7 +69,7 @@ public class MerchItemController implements Initializable {
 
     private void updateOptionsVisibility() {
         MerchSceneController merchSceneController =
-                (MerchSceneController) Getter.getInstance().getController(SceneEnum.MERCH_SCENE);
+                (MerchSceneController) SceneManager.getInstance().getController(SceneEnum.MERCH_SCENE);
         if (numberOfSelectedMerch > 0) {
             merchSceneController.showOptions();
         } else {
@@ -62,16 +77,24 @@ public class MerchItemController implements Initializable {
         }
     }
 
-    public void setup(Merchandise merchandise) {
-        merchNameLabel.setText("Tên sản phẩm : " + merchandise.getName());
-        if (merchandise.isAvailable()) {
+    public void setup(MerchandiseComposite merchandiseComposite) {
+        this.merchandiseComposite = merchandiseComposite;
+        updateGraphicElements();
+    }
+
+    private void updateGraphicElements() {
+        if (merchandiseComposite == null) {
+            return;
+        }
+
+        merchNameLabel.setText("Tên sản phẩm : " + merchandiseComposite.getName());
+        if (merchandiseComposite.isAvailable()) {
             merchStatusLabel.setText("Tình trạng : Còn hàng");
         } else {
             merchStatusLabel.setText("Tình trạng : Hết hàng");
         }
-        merchQuantityLabel.setText("Số lượng : x" + String.valueOf(merchandise.getQuantity()));
-        merchPriceLabel.setText("Giá thành : " + Formatter.format(merchandise.getPrice()) + " VND");
-        merchDateLabel.setText("Ngày tạo : " + merchandise.getImportDate());
-        imageView.setImage(merchandise.getImage());
+        merchPriceLabel.setText("Giá thành : " + Formatter.format(merchandiseComposite.calculate()) + " VND");
+        merchDateLabel.setText("Ngày tạo : " + merchandiseComposite.getCreateDate());
+        imageView.setImage(merchandiseComposite.getImage());
     }
 }

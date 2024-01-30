@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6ef382f-e3d7-48f3-925c-f06e1da8f541" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/NewMerchItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Available.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Formatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/NewMerchItemScene.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/pin-maxell-2a-a1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/NewSubitemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Browsable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/URIBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/Items/NewSubitem.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/WrongInput.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MainSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MainSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchItemController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/MerchSceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/NewMerchItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Controllers/NewMerchItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Calculable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Calculable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Merchandise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/Merchandise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseBuilder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Entities/MerchandiseComposite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/LogisticsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/LogisticsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Getter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Getter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/Getter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/merchlogistics/Workers/SceneManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FXMLs/Items/MerchItem.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/Items/MerchItem.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXMLs/MerchScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/MerchScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXMLs/NewMerchItemScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXMLs/NewMerchItemScene.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -71,6 +70,7 @@
       <recent name="D:\Java IDE Workspace\MerchLogistics\src\main\resources\FXMLs" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.merchlogistics.Entities" />
       <recent name="com.example.merchlogistics.Workers" />
     </key>
   </component>
@@ -100,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704706632929</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Building fundamental classes &amp; GUI">
+      <option name="closed" value="true" />
+      <created>1705286662073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705286662073</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -10,7 +10,7 @@ import java.io.IOException;
 public class LogisticsApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        SceneGettable sceneGettable = Getter.getInstance();
+        SceneGettable sceneGettable = SceneManager.getInstance();
         ControllerGettable controllerGettable = (ControllerGettable) sceneGettable;
         SceneSwitchable sceneSwitchable = new SceneSwitcher(stage, sceneGettable);
 

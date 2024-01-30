@@ -16,23 +16,23 @@ import javafx.scene.Scene;
  * its responsibility is to load scenes and
  * provide it to client whenever they need
  */
-public class Getter implements SceneGettable, ControllerGettable {
-    private static Getter getter;
+public class SceneManager implements SceneGettable, ControllerGettable {
+    private static SceneManager sceneManager;
     private final HashMap<SceneEnum, Scene> enumSceneHashMap = new HashMap<>();
     private final HashMap<SceneEnum, Object> enumControllerHashMap = new HashMap<>();
     private final Loggable loggable = new IOExceptionLogger();
 
-    public static Getter getInstance() {
-        if (getter == null) {
-            getter = new Getter();
+    public static SceneManager getInstance() {
+        if (sceneManager == null) {
+            sceneManager = new SceneManager();
         }
-        return getter;
+        return sceneManager;
     }
 
     /* this constructor loads every possible scene from path
      *  for later use
      */
-    private Getter() {
+    private SceneManager() {
         load(SceneEnum.MAIN_SCENE, "/FXMLs/MainSceneFXML.fxml");
         load(SceneEnum.MERCH_SCENE, "/FXMLs/MerchScene.fxml");
         load(SceneEnum.HISTORY_SCENE, "/FXMLs/HistoryScene.fxml");

@@ -1,22 +1,25 @@
 package com.example.merchlogistics.Controllers;
 
 import com.example.merchlogistics.Entities.Merchandise;
-import com.example.merchlogistics.Entities.MerchandiseBuilder;
+import com.example.merchlogistics.Entities.MerchandiseComposite;
+import com.example.merchlogistics.Workers.URIBrowser;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.TreeSet;
 
 public class MerchSceneController extends Controller {
-    private final TreeSet<Merchandise> merchandiseTreeSet = new TreeSet<>();
+    private final TreeSet<MerchandiseComposite> merchandiseCompositeTreeSet = new TreeSet<>();
+    private final List<Stage> stages = new ArrayList<>();
     @FXML
     private VBox myVBox;
     @FXML
@@ -30,20 +33,20 @@ public class MerchSceneController extends Controller {
 
     }
 
-    public void addMerch(Merchandise merchandise) {
-        merchandiseTreeSet.add(merchandise);
-        update(merchandise);
+    public void addMerch(MerchandiseComposite merchandiseComposite) {
+        merchandiseCompositeTreeSet.add(merchandiseComposite);
+        update(merchandiseComposite);
     }
 
-    private void update(Merchandise merchandise) {
+    private void update(MerchandiseComposite merchandiseComposite) {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/FXMLs/Items/MerchItem.fxml"));
         try {
             Parent parent = fxmlLoader.load();
             MerchItemController merchItemController = fxmlLoader.getController();
-            merchItemController.setup(merchandise);
+            merchItemController.setup(merchandiseComposite);
             myVBox.getChildren().add(parent);
         } catch (Exception ignore) {
-
+            System.out.println("MerchSceneController update error");
         }
     }
 

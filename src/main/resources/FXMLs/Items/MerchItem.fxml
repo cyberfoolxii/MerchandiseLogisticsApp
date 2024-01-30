@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<Button fx:id="itemButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.merchlogistics.Controllers.MerchItemController">
+<Button fx:id="itemButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#buttonClick" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.merchlogistics.Controllers.MerchItemController">
    <contextMenu>
       <ContextMenu>
          <items>
